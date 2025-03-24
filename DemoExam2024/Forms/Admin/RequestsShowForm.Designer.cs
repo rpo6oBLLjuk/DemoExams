@@ -31,7 +31,6 @@
             TitlePanel = new Panel();
             TitleLabel = new Label();
             dataGridView1 = new DataGridView();
-            ApplyButton = new Button();
             TitlePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -71,23 +70,10 @@
             dataGridView1.Size = new Size(782, 319);
             dataGridView1.TabIndex = 1;
             // 
-            // ApplyButton
-            // 
-            ApplyButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            ApplyButton.AutoSize = true;
-            ApplyButton.Location = new Point(668, 411);
-            ApplyButton.Name = "ApplyButton";
-            ApplyButton.Size = new Size(102, 30);
-            ApplyButton.TabIndex = 2;
-            ApplyButton.Text = "ApplyButton";
-            ApplyButton.UseVisualStyleBackColor = true;
-            ApplyButton.Click += ApplyButton_Click;
-            // 
             // RequestsShowForm
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(782, 453);
-            Controls.Add(ApplyButton);
             Controls.Add(dataGridView1);
             Controls.Add(TitlePanel);
             MinimumSize = new Size(800, 500);
@@ -106,6 +92,5 @@
         private Panel TitlePanel;
         private Label TitleLabel;
         private DataGridView dataGridView1;
-        private Button ApplyButton;
     }
 }

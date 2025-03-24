@@ -35,3 +35,7 @@ C:\Users\Admin\Documents\Github\DemoExams\DemoExam2024\obj\Debug\net8.0-windows\
 C:\Users\Admin\Documents\Github\DemoExams\DemoExam2024\obj\Debug\net8.0-windows\DemoExam2024.MainMenuForm.resources
 C:\Users\Admin\Documents\Github\DemoExams\DemoExam2024\obj\Debug\net8.0-windows\DemoExam2024.RequestsShowForm.resources
 C:\Users\Admin\Documents\Github\DemoExams\DemoExam2024\obj\Debug\net8.0-windows\DemoExam2024.Properties.Resources.resources
+C:\Users\Admin\Documents\Github\DemoExams\DemoExam2024\obj\Debug\net8.0-windows\DemoExam2024.Forms.AdminPanel.resources
+C:\Users\Admin\Documents\Github\DemoExams\DemoExam2024\obj\Debug\net8.0-windows\DemoExam2024.Forms.WorkerPanel.resources
+C:\Users\Admin\Documents\Github\DemoExams\DemoExam2024\obj\Debug\net8.0-windows\DemoExam2024.Forms.Admin.AddRequest.resources
+C:\Users\Admin\Documents\Github\DemoExams\DemoExam2024\obj\Debug\net8.0-windows\DemoExam2024.Forms.Worker.ChangeRequestStatus.resources

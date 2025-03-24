@@ -2,32 +2,53 @@
 {
     internal static class FormManager
     {
-        public static Form CurrentForm { get; private set; }
         public static Form MainForm { get; private set; }
 
+        private static List<Form> pool = new();
 
-        public static void SetDefaultForm(Form form) => MainForm = form;
+
+        public static void SetDefaultForm(Form form)
+        {
+            MainForm = form;
+            pool.Add(form);
+        }
 
         public static void OpenForm<T>(bool closeCurrentForm = true) where T : Form, new()
         {
-            if (closeCurrentForm)
+            if (closeCurrentForm && pool.Last() != MainForm)
             {
-                if (CurrentForm != null && CurrentForm != MainForm)
-                {
-                    CurrentForm.Close();
-                }
+                pool.Last()?.Close();
+                RemoveLastForm();
             }
+            else
+            {
+                pool.Last()?.Hide();
+            }
+
 
             if (typeof(T) != typeof(MainMenuForm))
             {
-                CurrentForm = new T();
+                Form CurrentForm = new T();
+                pool.Add(CurrentForm);
+
+                CurrentForm.FormClosed += ((_, _) => ShowPreviousForm());
                 CurrentForm.ShowDialog();
             }
             else
             {
-                CurrentForm = MainForm;
                 MainForm?.Show();
             }
+        }
+
+        private static void ShowPreviousForm()
+        {
+            RemoveLastForm();
+            pool.Last()?.Show();
+        }
+
+        private static void RemoveLastForm()
+        {
+            pool.Remove(pool.Last());
         }
     }
 }

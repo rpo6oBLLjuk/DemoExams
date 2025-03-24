@@ -5,39 +5,58 @@ namespace DemoExam2024
 {
     internal class RequestsManager
     {
-        public void AddRequest(string requestNumber, DateTime requestDate, string equipment, string faultType, string problemDescription, string clientName)
+        public void AddRequest(string equipment, string faultType, string problemDescription, string client)
         {
             if (!DBManager.GetConnection(out MySqlConnection connection))
                 return;
 
-            string query = "INSERT INTO Requests (RequestNumber, RequestDate, Equipment, FaultType, ProblemDescription, ClientName) VALUES (@RequestNumber, @RequestDate, @Equipment, @FaultType, @ProblemDescription, @ClientName)";
+            string query = "INSERT INTO `demoexam2024`.`requests` (`DateAdded`, `Equipment`, `FaultType`, `ProblemDescription`, `Client`) VALUES (@RequestDate, @Equipment, @FaultType, @ProblemDescription, @Client)";
 
-            using (MySqlCommand cmd = new MySqlCommand(query, connection))
+            try
             {
-                cmd.Parameters.AddWithValue("@RequestNumber", requestNumber);
-                cmd.Parameters.AddWithValue("@RequestDate", requestDate);
-                cmd.Parameters.AddWithValue("@Equipment", equipment);
-                cmd.Parameters.AddWithValue("@FaultType", faultType);
-                cmd.Parameters.AddWithValue("@ProblemDescription", problemDescription);
-                cmd.Parameters.AddWithValue("@ClientName", clientName);
+                using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@RequestDate", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@Equipment", equipment);
+                    cmd.Parameters.AddWithValue("@FaultType", faultType);
+                    cmd.Parameters.AddWithValue("@ProblemDescription", problemDescription);
+                    cmd.Parameters.AddWithValue("@Client", client);
 
-                cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Request applied", "Applied", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Apply Request Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
-        public void UpdateRequestStatus(int requestID, string status)
+        public void UpdateRequestStatus(int requestID, string status, string worker)
         {
             if (!DBManager.GetConnection(out MySqlConnection connection))
                 return;
 
-            string query = "UPDATE Requests SET Status = @Status WHERE RequestID = @RequestID";
+            string query = "UPDATE Requests SET Status = @Status, Executor = @Worker WHERE RequestID = @RequestID";
 
-            using (MySqlCommand cmd = new MySqlCommand(query, connection))
+            try
             {
-                cmd.Parameters.AddWithValue("@Status", status);
-                cmd.Parameters.AddWithValue("@RequestID", requestID);
+                using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Worker", worker);
+                    cmd.Parameters.AddWithValue("@Status", status);
+                    cmd.Parameters.AddWithValue("@RequestID", requestID);
 
-                cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Request status updated", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Status update Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -54,58 +73,44 @@ namespace DemoExam2024
             dataGridView.DataSource = table;
         }
 
-        public void SaveRequests(DataGridView dataGridView)
+        public void LoadStatusesToComboBox(ComboBox statusComboBox)
         {
             if (!DBManager.GetConnection(out MySqlConnection connection))
                 return;
 
-            string query = "SELECT * FROM Requests";
-            MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
-
-            MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder(adapter);
-            adapter.InsertCommand = commandBuilder.GetInsertCommand();
-            adapter.UpdateCommand = commandBuilder.GetUpdateCommand();
-            adapter.DeleteCommand = commandBuilder.GetDeleteCommand();
-
-            DataTable table = (DataTable)dataGridView.DataSource;
-
             try
             {
-                adapter.Update(table);
-                MessageBox.Show("Изменения успешно сохранены.");
-            }
-            catch (MySqlException ex)
-            {
-                string errorMessage = ex.Message;
-                if (errorMessage.Contains("doesn't have a default value"))
+                string query = @"
+                    SELECT COLUMN_TYPE 
+                    FROM INFORMATION_SCHEMA.COLUMNS 
+                    WHERE TABLE_SCHEMA = DATABASE() 
+                      AND TABLE_NAME = 'Requests' 
+                      AND COLUMN_NAME = 'status'";
+
+                using (var command = new MySqlCommand(query, connection))
                 {
-                    string fieldName = errorMessage.Split('\'')[1];
-                    MessageBox.Show($"Параметр '{fieldName}' некорректный. Укажите значение для этого поля.");
-                }
-                else
-                {
-                    MessageBox.Show("Ошибка при сохранении данных: " + ex.Message);
+                    var result = command.ExecuteScalar()?.ToString();
+
+                    if (result != null && result.StartsWith("enum("))
+                    {
+                        string enumValues = result
+                            .Substring(5, result.Length - 6)
+                            .Replace("'", "");
+
+                        statusComboBox.DataSource = enumValues.Split(',')
+                            .Select(s => s.Trim())
+                            .ToList();
+                    }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка: " + ex.Message);
+                MessageBox.Show($"Ошибка при загрузке статусов: {ex.Message}");
             }
-        }
-
-        public void LoadTableColumns(DataGridView dataGridView)
-        {
-            if (!DBManager.GetConnection(out MySqlConnection connection))
-                return;
-
-            string query = "SELECT * FROM Requests";
-            MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-
-            table.Rows.Clear();
-
-            dataGridView.DataSource = table;
+            finally
+            {
+                connection?.Close();
+            }
         }
 
         public void SearchRequest(string requestNumber, DataGridView dataGridView)
@@ -120,22 +125,6 @@ namespace DemoExam2024
             adapter.Fill(table);
 
             dataGridView.DataSource = table;
-        }
-
-        public void AssignRequest(int requestID, int userID)
-        {
-            if (!DBManager.GetConnection(out MySqlConnection connection))
-                return;
-
-            string query = "UPDATE Requests SET AssignedTo = @UserID WHERE RequestID = @RequestID";
-
-            using (MySqlCommand cmd = new MySqlCommand(query, connection))
-            {
-                cmd.Parameters.AddWithValue("@UserID", userID);
-                cmd.Parameters.AddWithValue("@RequestID", requestID);
-
-                cmd.ExecuteNonQuery();
-            }
         }
     }
 }

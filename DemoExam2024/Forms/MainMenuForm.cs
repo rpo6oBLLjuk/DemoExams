@@ -1,4 +1,6 @@
-﻿namespace DemoExam2024
+﻿using DemoExam2024.Forms;
+
+namespace DemoExam2024
 {
     public partial class MainMenuForm : Form
     {
@@ -10,9 +12,10 @@
         private void AuthButton_Click(object sender, EventArgs e)
         {
             if (DBManager.Login(loginTextBox.Text, passwordTextBox.Text))
-                RequestsShowFormOpen();
+                if (DBManager.IsAdminUser())
+                    FormManager.OpenForm<AdminPanel>();
+                else
+                    FormManager.OpenForm<WorkerPanel>();
         }
-
-        private void RequestsShowFormOpen() => FormManager.OpenForm<RequestsShowForm>();
     }
 }
