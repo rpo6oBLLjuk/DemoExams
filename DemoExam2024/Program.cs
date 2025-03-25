@@ -1,5 +1,3 @@
-using DemoExam2024;
-
 namespace DemoExam2024
 {
     internal static class Program

@@ -1,6 +1,6 @@
-﻿namespace DemoExam2024.Forms
+﻿namespace DemoExam2024.Forms.Admin
 {
-    partial class WorkerPanel
+    partial class RemoveRequest
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             Background = new Panel();
-            ChangeStatusButton = new Button();
+            RemoveRequestText = new MaskedTextBox();
+            RemoveRequestButton = new Button();
+            requestLabel = new Label();
             TitleLabel = new Label();
             Background.SuspendLayout();
             SuspendLayout();
@@ -38,7 +40,9 @@
             // 
             Background.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             Background.BackColor = SystemColors.Menu;
-            Background.Controls.Add(ChangeStatusButton);
+            Background.Controls.Add(RemoveRequestText);
+            Background.Controls.Add(RemoveRequestButton);
+            Background.Controls.Add(requestLabel);
             Background.Controls.Add(TitleLabel);
             Background.Location = new Point(0, 0);
             Background.Margin = new Padding(0);
@@ -46,16 +50,34 @@
             Background.Size = new Size(782, 453);
             Background.TabIndex = 0;
             // 
-            // ChangeStatusButton
+            // RemoveRequestText
             // 
-            ChangeStatusButton.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            ChangeStatusButton.Location = new Point(300, 200);
-            ChangeStatusButton.Name = "ChangeStatusButton";
-            ChangeStatusButton.Size = new Size(200, 60);
-            ChangeStatusButton.TabIndex = 8;
-            ChangeStatusButton.Text = "Change Status";
-            ChangeStatusButton.UseVisualStyleBackColor = true;
-            ChangeStatusButton.Click += ChangeStatusButton_Click;
+            RemoveRequestText.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            RemoveRequestText.Location = new Point(250, 200);
+            RemoveRequestText.Mask = "00000";
+            RemoveRequestText.Name = "RemoveRequestText";
+            RemoveRequestText.Size = new Size(300, 30);
+            RemoveRequestText.TabIndex = 9;
+            RemoveRequestText.ValidatingType = typeof(int);
+            // 
+            // RemoveRequestButton
+            // 
+            RemoveRequestButton.AutoSize = true;
+            RemoveRequestButton.Location = new Point(649, 420);
+            RemoveRequestButton.Name = "RemoveRequestButton";
+            RemoveRequestButton.Size = new Size(130, 30);
+            RemoveRequestButton.TabIndex = 1;
+            RemoveRequestButton.Text = "Remove Request";
+            RemoveRequestButton.UseVisualStyleBackColor = true;
+            RemoveRequestButton.Click += RemoveRequestButton_Click;
+            // 
+            // requestLabel
+            // 
+            requestLabel.Location = new Point(137, 205);
+            requestLabel.Name = "requestLabel";
+            requestLabel.Size = new Size(107, 25);
+            requestLabel.TabIndex = 7;
+            requestLabel.Text = "Request:";
             // 
             // TitleLabel
             // 
@@ -66,20 +88,21 @@
             TitleLabel.Name = "TitleLabel";
             TitleLabel.Size = new Size(782, 453);
             TitleLabel.TabIndex = 0;
-            TitleLabel.Text = "Worker panel";
+            TitleLabel.Text = "Remove Request";
             TitleLabel.TextAlign = ContentAlignment.TopCenter;
             // 
-            // WorkerPanel
+            // RemoveRequest
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(782, 453);
             Controls.Add(Background);
             MinimumSize = new Size(800, 500);
-            Name = "WorkerPanel";
+            Name = "RemoveRequest";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Worker Panel";
+            Text = "Remove Request";
             Background.ResumeLayout(false);
+            Background.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -87,6 +110,8 @@
 
         private Panel Background;
         private Label TitleLabel;
-        private Button ChangeStatusButton;
+        private Label requestLabel;
+        private Button RemoveRequestButton;
+        private MaskedTextBox RemoveRequestText;
     }
 }

@@ -14,7 +14,7 @@
 
         private void ApplyStatusButton_Click(object sender, EventArgs e)
         {
-            DBManager.RequestsManager.UpdateRequestStatus(int.Parse(RequestNumberText.Text), StatusComboBox.Text, WorkerText.Text);
+            DBManager.RequestsManager.UpdateRequestStatus(int.Parse(RequestNumberText.Text.Replace(" ", "")), StatusComboBox.Text, WorkerText.Text);
         }
     }
 }

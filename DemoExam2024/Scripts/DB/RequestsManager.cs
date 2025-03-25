@@ -31,10 +31,9 @@ namespace DemoExam2024
             {
                 MessageBox.Show(ex.Message, "Apply Request Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
         }
 
-        public void UpdateRequestStatus(int requestID, string status, string worker)
+        public void UpdateRequestStatus(int requestNumber, string status, string worker)
         {
             if (!DBManager.GetConnection(out MySqlConnection connection))
                 return;
@@ -47,7 +46,7 @@ namespace DemoExam2024
                 {
                     cmd.Parameters.AddWithValue("@Worker", worker);
                     cmd.Parameters.AddWithValue("@Status", status);
-                    cmd.Parameters.AddWithValue("@RequestID", requestID);
+                    cmd.Parameters.AddWithValue("@RequestID", requestNumber);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -113,7 +112,7 @@ namespace DemoExam2024
             }
         }
 
-        public void SearchRequest(string requestNumber, DataGridView dataGridView)
+        public void SearchRequest(int requestNumber, DataGridView dataGridView)
         {
             if (!DBManager.GetConnection(out MySqlConnection connection))
                 return;
@@ -125,6 +124,40 @@ namespace DemoExam2024
             adapter.Fill(table);
 
             dataGridView.DataSource = table;
+        }
+
+        public void RemoveRequest(int requestNumber)
+        {
+            if (!DBManager.GetConnection(out MySqlConnection connection))
+                return;
+
+            string query = "DELETE FROM `demoexam2024`.`requests` WHERE `RequestId` = @RequestId";
+
+            try
+            {
+                using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@RequestId", requestNumber);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Request deleted successfully", "Success",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Request not found", "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error deleting request: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

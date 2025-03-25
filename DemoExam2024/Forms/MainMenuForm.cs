@@ -12,10 +12,12 @@ namespace DemoExam2024
         private void AuthButton_Click(object sender, EventArgs e)
         {
             if (DBManager.Login(loginTextBox.Text, passwordTextBox.Text))
-                if (DBManager.IsAdminUser())
-                    FormManager.OpenForm<AdminPanel>();
-                else
-                    FormManager.OpenForm<WorkerPanel>();
+                return;
+
+            if (!DBManager.IsAdminUser())
+                FormManager.OpenForm<AdminPanel>();
+            else
+                FormManager.OpenForm<WorkerPanel>();
         }
     }
 }

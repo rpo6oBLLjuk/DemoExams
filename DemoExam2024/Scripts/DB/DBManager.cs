@@ -6,13 +6,14 @@ namespace DemoExam2024
     {
         public static RequestsManager RequestsManager { get; } = new();
 
-
         static string _username = "";
         static string _password = "";
         static string _host = "localhost";
         static string _database = "DemoExam2024";
 
-        static string ConnectionString => $"server={_host};database={_database};user={_username};password={_password};";
+        static string ConnectionString => $"server={_host};database={_database};user={_username};password={_password};ConnectionTimeout=1;";
+
+        static bool useConnection = false;
 
 
         public static bool Login(string user, string password)
@@ -55,15 +56,25 @@ namespace DemoExam2024
 
         public static MySqlConnection GetConnection()
         {
+            if (!useConnection)
+                return null;
+
             MySqlConnection connection = new MySqlConnection(ConnectionString);
             try
             {
                 connection.Open();
                 return connection;
             }
-            catch (Exception ex)
+            catch (MySqlException mySqlEx)
             {
-                MessageBox.Show("Please check your login and password.", "Failed to connect", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                string errorMessage = mySqlEx.Number switch
+                {
+                    1042 => "Сервер MySQL недоступен",
+                    1045 => "Неверный логин или пароль",
+                    _ => mySqlEx.Message
+                };
+                MessageBox.Show(errorMessage, "Connection error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
         }
