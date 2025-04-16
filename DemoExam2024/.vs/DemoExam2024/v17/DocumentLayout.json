@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|c:\\users\\musat\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\demoexams\\demoexam2024\\scripts\\db\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:scripts\\db\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|c:\\users\\musat\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\demoexams\\demoexam2024\\forms\\admin\\requestsshowform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:forms\\admin\\requestsshowform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\forms\\admin\\requestsshowform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:forms\\admin\\requestsshowform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|c:\\users\\musat\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\demoexams\\demoexam2024\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|c:\\users\\musat\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\demoexams\\demoexam2024\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\forms\\admin\\removerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:forms\\admin\\removerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|c:\\users\\musat\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\demoexams\\demoexam2024\\scripts\\db\\requestsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:scripts\\db\\requestsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|c:\\users\\musat\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\demoexams\\demoexam2024\\forms\\admin\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:forms\\admin\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|c:\\users\\musat\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\demoexams\\demoexam2024\\forms\\admin\\removerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:forms\\admin\\removerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\forms\\admin\\removerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:forms\\admin\\removerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|c:\\users\\musat\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\demoexams\\demoexam2024\\forms\\admin\\requestsshowform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:forms\\admin\\requestsshowform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|c:\\users\\musat\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\demoexams\\demoexam2024\\forms\\worker\\changerequeststatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,6 +33,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\forms\\worker\\changerequeststatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:forms\\worker\\changerequeststatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|c:\\users\\musat\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\demoexams\\demoexam2024\\scripts\\db\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:scripts\\db\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\forms\\admin\\requestsshowform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:forms\\admin\\requestsshowform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|c:\\users\\musat\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\demoexams\\demoexam2024\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\forms\\worker\\workerpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -53,14 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\forms\\admin\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:forms\\admin\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|c:\\users\\musat\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\demoexams\\demoexam2024\\forms\\admin\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:forms\\admin\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{917EC258-9E30-42DA-BEC4-B0C32EB9C3C1}|DemoExam2024.csproj|solutionrelative:forms\\mainmenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,24 +66,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "RequestsShowForm.cs",
               "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Admin\\RequestsShowForm.cs",
               "RelativeDocumentMoniker": "Forms\\Admin\\RequestsShowForm.cs",
               "ToolTip": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Admin\\RequestsShowForm.cs",
               "RelativeToolTip": "Forms\\Admin\\RequestsShowForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T12:18:08.125Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "RequestsShowForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Admin\\RequestsShowForm.cs",
               "RelativeDocumentMoniker": "Forms\\Admin\\RequestsShowForm.cs",
@@ -98,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -110,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "RemoveRequest.cs",
               "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Admin\\RemoveRequest.cs",
               "RelativeDocumentMoniker": "Forms\\Admin\\RemoveRequest.cs",
@@ -123,44 +119,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainMenuForm.cs",
               "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\MainMenuForm.cs",
               "RelativeDocumentMoniker": "Forms\\MainMenuForm.cs",
               "ToolTip": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\MainMenuForm.cs",
               "RelativeToolTip": "Forms\\MainMenuForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T22:07:19.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MainMenuForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentIndex": 5,
+              "Title": "MainMenuForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\MainMenuForm.cs",
               "RelativeDocumentMoniker": "Forms\\MainMenuForm.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Github\\DemoExams\\DemoExam2024\\Forms\\MainMenuForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Admin\\Documents\\Github\\DemoExams\\DemoExam2024\\Forms\\MainMenuForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "ToolTip": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\MainMenuForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Forms\\MainMenuForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T22:07:18.176Z"
+              "WhenOpened": "2025-03-24T22:07:18.176Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "ChangeRequestStatus.cs",
               "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Worker\\ChangeRequestStatus.cs",
               "RelativeDocumentMoniker": "Forms\\Worker\\ChangeRequestStatus.cs",
               "ToolTip": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Worker\\ChangeRequestStatus.cs",
               "RelativeToolTip": "Forms\\Worker\\ChangeRequestStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T22:00:27.823Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "WorkerPanel.cs",
               "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Worker\\WorkerPanel.cs",
               "RelativeDocumentMoniker": "Forms\\Worker\\WorkerPanel.cs",
@@ -173,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "WorkerPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Worker\\WorkerPanel.cs",
               "RelativeDocumentMoniker": "Forms\\Worker\\WorkerPanel.cs",
@@ -184,31 +181,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "AdminPanel.cs",
               "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Admin\\AdminPanel.cs",
               "RelativeDocumentMoniker": "Forms\\Admin\\AdminPanel.cs",
               "ToolTip": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Admin\\AdminPanel.cs",
               "RelativeToolTip": "Forms\\Admin\\AdminPanel.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAvwBgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAvwBcAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T21:45:48.872Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "ChangeRequestStatus.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Worker\\ChangeRequestStatus.cs",
               "RelativeDocumentMoniker": "Forms\\Worker\\ChangeRequestStatus.cs",
               "ToolTip": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Worker\\ChangeRequestStatus.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Forms\\Worker\\ChangeRequestStatus.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T21:59:13.946Z"
+              "WhenOpened": "2025-03-24T21:59:13.946Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AdminPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Admin\\AdminPanel.cs",
               "RelativeDocumentMoniker": "Forms\\Admin\\AdminPanel.cs",
@@ -219,36 +217,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RequestsManager.cs",
-              "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Scripts\\DB\\RequestsManager.cs",
-              "RelativeDocumentMoniker": "Scripts\\DB\\RequestsManager.cs",
-              "ToolTip": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Scripts\\DB\\RequestsManager.cs",
-              "RelativeToolTip": "Scripts\\DB\\RequestsManager.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAIIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T15:08:23.083Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "RemoveRequest.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Admin\\RemoveRequest.cs",
               "RelativeDocumentMoniker": "Forms\\Admin\\RemoveRequest.cs",
               "ToolTip": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Forms\\Admin\\RemoveRequest.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Forms\\Admin\\RemoveRequest.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T04:58:14.777Z"
+              "WhenOpened": "2025-03-25T04:58:14.777Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "DBManager.cs",
               "DocumentMoniker": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Scripts\\DB\\DBManager.cs",
               "RelativeDocumentMoniker": "Scripts\\DB\\DBManager.cs",
               "ToolTip": "C:\\Users\\Musat\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\DemoExams\\DemoExam2024\\Scripts\\DB\\DBManager.cs",
               "RelativeToolTip": "Scripts\\DB\\DBManager.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-23T13:47:10.081Z",
               "EditorCaption": ""

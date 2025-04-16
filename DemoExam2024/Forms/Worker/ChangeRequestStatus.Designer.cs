@@ -31,8 +31,6 @@
             Background = new Panel();
             StatusComboBox = new ComboBox();
             RequestNumberText = new MaskedTextBox();
-            WorkerText = new TextBox();
-            workerLabel = new Label();
             statusLabel = new Label();
             requestNumberLabel = new Label();
             ApplyStatusButton = new Button();
@@ -46,8 +44,6 @@
             Background.BackColor = SystemColors.Menu;
             Background.Controls.Add(StatusComboBox);
             Background.Controls.Add(RequestNumberText);
-            Background.Controls.Add(WorkerText);
-            Background.Controls.Add(workerLabel);
             Background.Controls.Add(statusLabel);
             Background.Controls.Add(requestNumberLabel);
             Background.Controls.Add(ApplyStatusButton);
@@ -80,22 +76,6 @@
             RequestNumberText.SkipLiterals = false;
             RequestNumberText.TabIndex = 15;
             RequestNumberText.ValidatingType = typeof(int);
-            // 
-            // WorkerText
-            // 
-            WorkerText.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            WorkerText.Location = new Point(250, 346);
-            WorkerText.Name = "WorkerText";
-            WorkerText.Size = new Size(300, 30);
-            WorkerText.TabIndex = 14;
-            // 
-            // workerLabel
-            // 
-            workerLabel.Location = new Point(137, 346);
-            workerLabel.Name = "workerLabel";
-            workerLabel.Size = new Size(107, 30);
-            workerLabel.TabIndex = 13;
-            workerLabel.Text = "Worker:";
             // 
             // statusLabel
             // 
@@ -157,8 +137,6 @@
         private Label TitleLabel;
         private Button ApplyStatusButton;
         private Label requestNumberLabel;
-        private TextBox WorkerText;
-        private Label workerLabel;
         private Label statusLabel;
         private MaskedTextBox RequestNumberText;
         private ComboBox StatusComboBox;

@@ -21,7 +21,7 @@ namespace DemoExam2024.Forms
 
         private void RemoveRequestButton_Click(object sender, EventArgs e)
         {
-
+            FormManager.OpenForm<RemoveRequest>(false);
         }
     }
 }

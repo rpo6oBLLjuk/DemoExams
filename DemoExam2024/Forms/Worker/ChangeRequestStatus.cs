@@ -14,7 +14,10 @@
 
         private void ApplyStatusButton_Click(object sender, EventArgs e)
         {
-            DBManager.RequestsManager.UpdateRequestStatus(int.Parse(RequestNumberText.Text.Replace(" ", "")), StatusComboBox.Text, WorkerText.Text);
+            if (int.TryParse(RequestNumberText.Text.Replace(" ", ""), out int result))
+                DBManager.RequestsManager.UpdateRequestStatus(result, StatusComboBox.Text, DBManager.Username);
+            else
+                MessageBox.Show("Incorrect Request number");
         }
     }
 }

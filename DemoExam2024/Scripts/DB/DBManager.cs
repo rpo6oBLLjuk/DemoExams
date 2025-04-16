@@ -6,20 +6,19 @@ namespace DemoExam2024
     {
         public static RequestsManager RequestsManager { get; } = new();
 
-        static string _username = "";
-        static string _password = "";
+        public static string Username { get; private set; } = "";
+        public static string Password { get; private set; } = "";
         static string _host = "localhost";
         static string _database = "DemoExam2024";
 
-        static string ConnectionString => $"server={_host};database={_database};user={_username};password={_password};ConnectionTimeout=1;";
+        static string ConnectionString => $"server={_host};database={_database};user={Username};password={Password};ConnectionTimeout=1;";
 
         static bool useConnection = false;
 
-
         public static bool Login(string user, string password)
         {
-            _username = user;
-            _password = password;
+            Username = user;
+            Password = password;
 
             return GetConnection(out _);
         }
@@ -36,7 +35,7 @@ namespace DemoExam2024
 
                 using (var cmd = new MySqlCommand(query, connection))
                 {
-                    cmd.Parameters.AddWithValue("@username", _username);
+                    cmd.Parameters.AddWithValue("@username", Username);
                     using (var reader = cmd.ExecuteReader())
                     {
                         return reader.HasRows;
@@ -67,7 +66,6 @@ namespace DemoExam2024
             }
             catch (MySqlException mySqlEx)
             {
-
                 string errorMessage = mySqlEx.Number switch
                 {
                     1042 => "Сервер MySQL недоступен",

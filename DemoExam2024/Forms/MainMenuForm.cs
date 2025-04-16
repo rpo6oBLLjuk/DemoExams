@@ -14,7 +14,7 @@ namespace DemoExam2024
             if (DBManager.Login(loginTextBox.Text, passwordTextBox.Text))
                 return;
 
-            if (!DBManager.IsAdminUser())
+            if (DBManager.IsAdminUser())
                 FormManager.OpenForm<AdminPanel>();
             else
                 FormManager.OpenForm<WorkerPanel>();
