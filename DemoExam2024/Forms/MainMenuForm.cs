@@ -11,7 +11,7 @@ namespace DemoExam2024
 
         private void AuthButton_Click(object sender, EventArgs e)
         {
-            if (DBManager.Login(loginTextBox.Text, passwordTextBox.Text))
+            if (!DBManager.Login(loginTextBox.Text, passwordTextBox.Text))
                 return;
 
             if (DBManager.IsAdminUser())

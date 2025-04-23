@@ -8,18 +8,24 @@ namespace DemoExam2024
 
         public static string Username { get; private set; } = "";
         public static string Password { get; private set; } = "";
-        static string _host = "localhost";
-        static string _database = "DemoExam2024";
 
-        static string ConnectionString => $"server={_host};database={_database};user={Username};password={Password};ConnectionTimeout=1;";
+        static string _user = "DemoExam2024_orbitgirl";
+        static string _password = "f4a509767859cb09c977eefe042b2d425d9a9d1f";
+        static string _server = "f1pwg.h.filess.io";
+        static string _database = "DemoExam2024_orbitgirl";
 
-        static bool useConnection = false;
+        //static string ConnectionString => $"server={_host};database={_database};user={_username};password={_password};";
+        static string ConnectionString = $"server={_server};user={_user};database={_database};port=3307;password={_password}";
+
+        static bool useConnection = true;
 
         public static bool Login(string user, string password)
         {
             Username = user;
             Password = password;
 
+            MessageBox.Show("Hard stop");
+            return false;
             return GetConnection(out _);
         }
 
